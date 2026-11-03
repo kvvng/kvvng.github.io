@@ -4,7 +4,7 @@
 
 [Building an Academic Website](https://jayrobwilliams.com/posts/2020/06/academic-website/), [Test site locally](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 
-Template resources: [Academic Pages](https://github.com/academicpages/academicpages.github.io), [Weightshift, the personal page](https://github.com/kylewang1999/kylewang1999.github.io.git), [GitPage tutorial](https://pages.github.com/#project-site)
+Template resources: [Academic Pages](https://github.com/academicpages/academicpages.github.io), [Weightshift, the personal page](https://github.com/kvvng/kvvng.github.io.git), [GitPage tutorial](https://pages.github.com/#project-site)
 
 - This website uses the template from [Academic Pages](https://github.com/academicpages/academicpages.github.io).
 - [README: A/home/kyle/Desktop/kylewang1999.github.io/_publicationscademic Pages](./README_academicpages.md)

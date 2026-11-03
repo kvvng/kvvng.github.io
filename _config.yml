@@ -12,9 +12,9 @@ title_separator          : "-"
 name                     : &name "Your Name"
 name_cn                  : &name_cn "Your Name"
 description              : &description "personal description"
-url                      : https://kylewang1999.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://kvvng.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "kylewang1999/kylewang1999.github.io"
+repository               : "kvvng/kvvng.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -88,7 +88,7 @@ author:
   location         : "La Jolla, CA"
   email            : "k5wang@ucsd.edu"
   linkedin         : "kaiyuan-wang-07b9831a4"
-  github           : "kylewang1999"
+  github           : "kvvng"
   twitter          : "kaiyuan_w"
   employer         : 
   googlescholar    : 
