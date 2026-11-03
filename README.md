@@ -1,6 +1,8 @@
 # Kaiyuan Wang's website
 
-An Astro site for https://kvvng.github.io, following the STARLab repository structure. The homepage is intentionally blank while the site is rebuilt.
+An Astro site for https://kvvng.github.io, following the STARLab repository structure. The single-page homepage contains a profile and research interests.
+
+Edit `src/pages/_index.md` to update profile text, links, and research interests. The portrait is stored at `assets/profile_photo_kaiyuan_wang.png`.
 
 ## Structure
 

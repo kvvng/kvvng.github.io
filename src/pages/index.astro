@@ -1,5 +1,58 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import { Image } from 'astro:assets';
+import portrait from '../../assets/profile_photo_kaiyuan_wang.png';
+import About, { frontmatter as profile } from './_index.md';
 ---
 
-<SiteLayout />
+<SiteLayout>
+  <header class="profile">
+    <Image
+      class="portrait"
+      src={portrait}
+      alt="Kaiyuan Wang"
+      width={240}
+      height={240}
+      widths={[120, 240, 360]}
+      sizes="(max-width: 600px) 150px, 120px"
+      format="webp"
+      loading="eager"
+    />
+    <div class="profile-text">
+      <h1>{profile.name} <span lang="zh-Hans">{profile.native_name}</span></h1>
+      <p class="affiliation">{profile.role}</p>
+      <nav aria-label="Contact and profiles">
+        {profile.links.map((link: { label: string; href: string }) => (
+          <a href={link.href}>{link.label}</a>
+        ))}
+      </nav>
+    </div>
+  </header>
+
+  <section class="research" aria-labelledby="research-heading">
+    <h2 id="research-heading">Research interests</h2>
+    <About />
+  </section>
+</SiteLayout>
+
+<style>
+  .profile { display: flex; align-items: center; gap: 24px; padding-bottom: 28px; border-bottom: 1px solid #e0e0e0; }
+  .portrait { width: 120px; height: 120px; flex-shrink: 0; border-radius: 50%; object-fit: cover; }
+  .profile-text { min-width: 0; }
+  h1 { margin: 0 0 6px; font-size: 36px; line-height: 1.2; letter-spacing: -0.025em; }
+  h1 span { display: inline-block; margin-left: 8px; font-size: 22px; letter-spacing: 0; color: #5f6c78; }
+  .affiliation { margin: 0 0 10px; }
+  nav { display: flex; flex-wrap: wrap; column-gap: 20px; row-gap: 4px; }
+  nav a { display: inline-flex; align-items: center; min-height: 32px; }
+  .research { margin-top: 40px; }
+  h2 { margin: 0 0 12px; font-size: 24px; }
+  .research :global(p) { margin: 0; }
+  @media (max-width: 600px) {
+    .profile { flex-direction: column; text-align: center; gap: 20px; }
+    .portrait { width: 150px; height: 150px; }
+    h1 { font-size: 32px; }
+    h1 span { display: block; margin: 8px 0 0; font-size: 20px; }
+    nav { justify-content: center; }
+    .research { margin-top: 32px; }
+  }
+</style>
