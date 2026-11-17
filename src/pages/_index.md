@@ -1,7 +1,8 @@
 ---
 name: Kaiyuan Wang
 native_name: 王恺元
-role: PhD student · STARLab, USC
+role: PhD student
+affiliation: STARLab, USC
 links:
   - label: Email
     icon: /icons/email.svg
