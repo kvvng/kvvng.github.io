@@ -1,0 +1,3 @@
+[submodule "third_party/blog"]
+	path = third_party/blog
+	url = https://github.com/kvvng/blog.git
