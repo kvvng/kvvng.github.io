@@ -19,8 +19,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+
+      - name: Read the pinned blog commit
+        id: blog
+        run: echo "sha=$(git rev-parse HEAD:third_party/blog)" >> "$GITHUB_OUTPUT"
+
+      - name: Check out the private blog
+        uses: actions/checkout@v7
         with:
-          submodules: true
+          repository: kvvng/blog
+          ref: ${{ steps.blog.outputs.sha }}
+          path: third_party/blog
+          ssh-key: ${{ secrets.BLOG_DEPLOY_KEY }}
+          persist-credentials: false
+
       - uses: withastro/action@v6
         with:
           node-version: "24.21.0"
