@@ -1,3 +1,9 @@
 [submodule "third_party/blog"]
 	path = third_party/blog
 	url = https://github.com/kvvng/blog.git
+[submodule "third_party/starlab-usc.github.io"]
+	path = third_party/starlab-usc.github.io
+	url = https://github.com/starlab-usc/starlab-usc.github.io.git
+[submodule "third_party/kwang_cv"]
+	path = third_party/kwang_cv
+	url = https://git@git.overleaf.com/655fe17b907e2b08f173e88a
